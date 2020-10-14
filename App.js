@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/Home/HomeScreen';
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text>HEADER TEST</Text>
       <HomeScreen />
       <StatusBar style="auto" />
     </View>
@@ -14,7 +15,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',

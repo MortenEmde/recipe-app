@@ -1,11 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, FlatList, ScrollView } from 'react-native';
 import styles from './styles';
+import { recipes } from '../../db/MockData';
 
 export default function HomeScreen() {
   return (
-    <View>
-      <Text style={styles.text}>Testing the app</Text>
-    </View>
+    <ScrollView contentContainerStyle={styles.contentContainer}>
+      {recipes.map(recipe => 
+        <View style={styles.card} key={recipe.recipeId}>  
+          <Image style={styles.image} source={{ uri: recipe.photoUrl }} />
+          <Text >{recipe.title}</Text>
+        </View>
+      )}
+    </ScrollView>
   );
 }
