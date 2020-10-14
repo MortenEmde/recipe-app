@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native'; 
 
 const styles = StyleSheet.create({
+  contentContainer: {
+    backgroundColor: '#fff'
+  },
   title: {
     fontSize: 28,
     margin: 15,
@@ -8,14 +11,21 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center'
   },
+  timeContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  timeIcon: {
+    marginRight: 5,
+  },
   time: {
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   ingredientContainer: {
-    margin: 30,
-    marginBottom: 0,
+    alignItems: 'center',
   },
   ingredient: {
     fontSize: 14,
