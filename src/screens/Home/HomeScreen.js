@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, FlatList, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 import styles from './styles';
 import { recipes } from '../../db/MockData';
 
