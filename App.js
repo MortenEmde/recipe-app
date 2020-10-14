@@ -1,22 +1,10 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/screens/Home/HomeScreen';
-import RecipeScreen from './src/screens/Recipe/RecipeScreen';
+import AppNavigation from './src/navigation/AppNavigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <RecipeScreen />
-      <StatusBar style="auto" />
-    </View>
+    <AppNavigation />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
