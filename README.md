@@ -23,10 +23,11 @@ From the home screen, you can use the button in the top left corner to get a men
 In the Categories Screen, you are able to choose a specific food category to be displayed in the same format as the home screen.
 
 ## Preview
-
+<div style="display:flex; flex-wrap:wrap">
 <img src="./assets/previewImages/preview1.png" alt="Home Screen" width="200"/>
 <img src="./assets/previewImages/preview2.png" alt="Recipe Screen" width="200"/>
 <img src="./assets/previewImages/preview3.png" alt="Ingredients Screen" width="200"/>
 <img src="./assets/previewImages/preview4.png" alt="Drawer Menu" width="200"/>
 <img src="./assets/previewImages/preview5.png" alt="Catagory Screen" width="200"/>
 <img src="./assets/previewImages/preview6.png" alt="Filtered Recipes Screen" width="200"/>
+</div>
