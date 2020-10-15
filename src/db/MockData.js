@@ -2,30 +2,30 @@ export const categories = [
   {
     id: 1,
     name: 'Italian Food',
-    photo_url:
+    photoUrl:
     'https://forkfeeds.com/wp-content/uploads/2019/08/Italian-food-1.jpeg'
   },
   {
     id: 2,
     name: 'Mexican Food',
-    photo_url: 'https://img1.mashed.com/img/gallery/mexican-foods-you-need-to-try-before-you-die/intro-1585677665.jpg'
+    photoUrl: 'https://img1.mashed.com/img/gallery/mexican-foods-you-need-to-try-before-you-die/intro-1585677665.jpg'
   },
   {
     id: 3,
     name: 'Asian Food',
-    photo_url:
+    photoUrl:
       'https://japansenoodles.nl/wp-content/uploads/2017/07/585be1aa1600002400bdf2a6.jpeg'
   },
   {
     id: 4,
     name: 'American Food',
-    photo_url:
+    photoUrl:
     'https://previews.123rf.com/images/baibakova/baibakova1807/baibakova180700091/105083577-american-food-fast-food-top-view.jpg'
   },
   {
     id: 5,
     name: 'Desserts',
-    photo_url: 'https://i0.wp.com/www.eatthis.com/wp-content/uploads/2019/07/dessert-table.jpg?fit=1200%2C879&ssl=1'
+    photoUrl: 'https://i0.wp.com/www.eatthis.com/wp-content/uploads/2019/07/dessert-table.jpg?fit=1200%2C879&ssl=1'
   },
 ];
 

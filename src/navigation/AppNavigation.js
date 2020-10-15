@@ -6,6 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import styles from './styles';
 import HomeScreen from '../screens/Home/HomeScreen';
 import DrawerContent from '../screens/Drawer/DrawerContent';
+import RecipesListScreen from '../screens/RecipesList/RecipesListScreen';
 import RecipeScreen from '../screens/Recipe/RecipeScreen';
 import IngredientsScreen from '../screens/Ingredients/IngredientsScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
@@ -22,6 +23,15 @@ function MainNavigator() {
             <Image style={styles.menuImage} source={require('../../assets/images/menu.png')} />
           </TouchableHighlight>
         })}
+      />
+      <Stack.Screen name='RecipesList' component={RecipesListScreen} 
+        options={
+          ({ navigation }) => ({
+          headerLeft: () => 
+          <TouchableHighlight onPress={() => {navigation.openDrawer()}}>
+            <Image style={styles.menuImage} source={require('../../assets/images/menu.png')} />
+          </TouchableHighlight>
+      })}
       />
       <Stack.Screen name='Recipe' component={RecipeScreen}/>
       <Stack.Screen name='Ingredients' component={IngredientsScreen} />
