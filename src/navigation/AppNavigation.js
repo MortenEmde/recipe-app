@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeScreen from '../screens/Home/HomeScreen';
+import DrawerContent from '../screens/Drawer/DrawerContent';
 import RecipeScreen from '../screens/Recipe/RecipeScreen';
 import IngredientsScreen from '../screens/Ingredients/IngredientsScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
@@ -14,13 +15,13 @@ function MainNavigator() {
   return(
     <Stack.Navigator>
       <Stack.Screen name='Home' component={HomeScreen}
-      options={({ navigation }) => ({
-        headerLeft: () => <Text
-          onPress={() => {
-            navigation.openDrawer();
-          }
-          }>Categories</Text>
-      })}
+        options={({ navigation }) => ({
+          headerLeft: () => <Text
+            onPress={() => {
+              navigation.openDrawer();
+            }
+            }>Menu</Text>
+        })}
       />
       <Stack.Screen name='Recipe' component={RecipeScreen}/>
       <Stack.Screen name='Ingredients' component={IngredientsScreen} />
@@ -33,12 +34,12 @@ const Drawer = createDrawerNavigator();
 function DrawerStack() {
   return(
     <Drawer.Navigator
-      drawerPosition='left'
-      initialRouteName='Main'
+      drawerPosition= 'left'
+      initialRouteName= 'Main'
       drawerStyle={{
         width: 230
       }}
-      drawerContent = {props => <Text>Hello!</Text>}
+      drawerContent = {(props) => <DrawerContent {...props} />}
     >
       <Drawer.Screen name='Main' component={MainNavigator} />
     </Drawer.Navigator>
