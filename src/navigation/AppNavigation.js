@@ -1,13 +1,14 @@
 import React from 'react';
+import { Image, TouchableHighlight } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import styles from './styles';
 import HomeScreen from '../screens/Home/HomeScreen';
 import DrawerContent from '../screens/Drawer/DrawerContent';
 import RecipeScreen from '../screens/Recipe/RecipeScreen';
 import IngredientsScreen from '../screens/Ingredients/IngredientsScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
-import { Text } from 'react-native';
 
 const Stack = createStackNavigator();
 
@@ -16,11 +17,10 @@ function MainNavigator() {
     <Stack.Navigator>
       <Stack.Screen name='Home' component={HomeScreen}
         options={({ navigation }) => ({
-          headerLeft: () => <Text
-            onPress={() => {
-              navigation.openDrawer();
-            }
-            }>Menu</Text>
+          headerLeft: () => 
+          <TouchableHighlight onPress={() => {navigation.openDrawer()}}>
+            <Image style={styles.menuImage} source={require('../../assets/images/menu.png')} />
+          </TouchableHighlight>
         })}
       />
       <Stack.Screen name='Recipe' component={RecipeScreen}/>

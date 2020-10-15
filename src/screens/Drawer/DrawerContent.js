@@ -13,7 +13,7 @@ export default function DrawerContent({ navigation }) {
           }}
         >
           <View style={styles.btnContainer}>
-            <Image source={require('../../../assets/images/clock.png')} style={styles.btnIcon} />
+            <Image source={require('../../../assets/images/home.png')} style={styles.btnIcon} />
             <Text style={styles.btnText}>HOME</Text>
           </View>
         </TouchableHighlight>
@@ -24,7 +24,7 @@ export default function DrawerContent({ navigation }) {
           }}
         >
           <View style={styles.btnContainer}>
-            <Image source={require('../../../assets/images/clock.png')} style={styles.btnIcon} />
+            <Image source={require('../../../assets/images/category.png')} style={styles.btnIcon} />
             <Text style={styles.btnText}>CATEGORIES</Text>
           </View>
         </TouchableHighlight>
