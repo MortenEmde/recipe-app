@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, View, Image, ScrollView, FlatList } from 'react-native';
-import IngredientsButton from '../../components/IngredientsButton';
+import { Text, View, Image, ScrollView } from 'react-native';
+import IngredientsButton from '../../components/ViewIngredientsButton/ViewIngredientsButton';
 import styles from './styles';
 
 export default function RecipeScreen({ route, navigation }) {
@@ -14,7 +14,7 @@ export default function RecipeScreen({ route, navigation }) {
         <Text style={styles.time}>{recipe.time} Minutes</Text>
       </View>
       <View style={styles.ingredientContainer}>
-        <IngredientsButton onPress={() => navigation.navigate('Home')} />
+        <IngredientsButton onPress={() => navigation.navigate('Ingredients', { recipe })} />
       </View>
       <View style={styles.descriptionContainer}>
         <Text style={styles.description}>{recipe.description}</Text>

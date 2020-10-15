@@ -10,7 +10,7 @@ export default function HomeScreen({ navigation }) {
         <TouchableHighlight key={recipe.recipeId} onPress={() => navigation.navigate('Recipe', { recipe })}>
           <View style={styles.card}>  
             <Image style={styles.image} source={{ uri: recipe.photoUrl }} />
-            <Text >{recipe.title}</Text>
+            <Text>{recipe.title}</Text>
           </View>
         </TouchableHighlight>
       )}
